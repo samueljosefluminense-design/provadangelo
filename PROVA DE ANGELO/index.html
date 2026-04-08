@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto de Carros - Exposição de Modelos</title>
+</head>
+<body>
+    <header>
+        <h1>Exposição de Carros Esportivos</h1>
+        <p>Bem-vindo à nossa coleção de carros incríveis!</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#lista">Ver Lista de Carros</a></li>
+            <li><a href="#tabela">Especificações</a></li>
+            <li><a href="#formulario">Contato</a></li>
+            <li><a href="detalhes.html">Página de Detalhes (interna)</a></li>
+            <li><a href="https://www.carrosnaweb.com.br/" target="_blank">Carros na Web (externa)</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="lista">
+            <h2>Lista de Carros em Exposição</h2>
+            <ul>
+                <li>Ferrari 488 GTB</li>
+                <li>Porsche 911 Turbo S</li>
+                <li>Lamborghini Huracán</li>
+                <li>McLaren 720S</li>
+                <li>BMW M8 Competition</li>
+            </ul>
+        </section>
+
+        <section id="tabela">
+            <h2>Especificações Técnicas</h2>
+            <table border="1">
+                <caption>Tabela de Especificações dos Carros</caption>
+                <thead>
+                    <tr>
+                        <th>Modelo</th>
+                        <th>Potência (CV)</th>
+                        <th>0-100 km/h (s)</th>
+                        <th>Vel. Máx (km/h)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Ferrari 488 GTB</td>
+                        <td>720</td>
+                        <td>3.0</td>
+                        <td>330</td>
+                    </tr>
+                    <tr>
+                        <td>Porsche 911 Turbo S</td>
+                        <td>650</td>
+                        <td>2.7</td>
+                        <td>330</td>
+                    </tr>
+                    <tr>
+                        <td>Lamborghini Huracán</td>
+                        <td>640</td>
+                        <td>2.9</td>
+                        <td>325</td>
+                    </tr>
+                </tbody>
+            </table>
+            <figure>
+                <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=600&h=400&fit=crop" alt="Ferrari 488 GTB vermelha em pista de corrida, carro esportivo de alta performance em exposição" loading="lazy" width="600" height="400">
+                <figcaption>Ferrari 488 GTB - Destaque da Exposição</figcaption>
+            </figure>
+        </section>
+
+        <section id="formulario">
+            <h2>Formulário de Contato</h2>
+            <form action="/enviar" method="post">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone"><br><br>
+
+                <label for="carro-favorito">Carro Favorito:</label><br>
+                <select id="carro-favorito" name="carro-favorito">
+                    <option value="ferrari">Ferrari 488 GTB</option>
+                    <option value="porsche">Porsche 911 Turbo S</option>
+                    <option value="lamborghini">Lamborghini Huracán</option>
+                </select><br><br>
+
+                <label>
+                    <input type="radio" name="visita" value="sim"> Visitar exposição?
+                </label>
+                <label>
+                    <input type="radio" name="visita" value="nao"> Não
+                </label><br><br>
+
+                <label for="comentarios">Comentários:</label><br>
+                <textarea id="comentarios" name="comentarios" rows="4" cols="50"></textarea><br><br>
+
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <h3>Contato e Informações</h3>
+        <p>&amp;copy; 2024 Exposição de Carros. Todos os direitos reservados.</p>
+        <address>
+            Email: <a href="mailto:contato@carros.com">contato@carros.com</a>
+        </address>
+    </footer>
+</body>
+</html>
